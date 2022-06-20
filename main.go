@@ -1,8 +1,8 @@
 package main
 
 import (
-	"awesomeProject/handlers"
 	"context"
+	"github.com/AveryKing/http/handlers"
 	"log"
 	"net/http"
 	"os"
