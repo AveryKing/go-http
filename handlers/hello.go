@@ -16,7 +16,6 @@ func NewHello(l *log.Logger) *Hello {
 }
 
 func (h *Hello) ServeHTTP(rw http.ResponseWriter, r *http.Request) {
-	h.l.Println("Hello worldz")
 	d, err := io.ReadAll(r.Body)
 	if err != nil {
 		http.Error(rw, "oops", http.StatusBadRequest)
